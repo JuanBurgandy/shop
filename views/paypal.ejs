@@ -1,0 +1,31 @@
+<!-- IMAGE CONTAINER -->
+
+<div class="jumbotron" style="height: 100vh;" id = "paypalJumbo">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-right">
+        <a href="/"> Go to the homepage<span class="fa fa-home fa-3x"> </span></a>
+          <a href="/shop"> Go to the shop<span class="fa fa-shopping-cart fa-3x"> </span></a>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-sm-3"></div>
+<div class="col-sm-6">
+  <h1> Your total is: $ <%= amount %></h1>
+  <h3>You will be re-directed to Paypal where you can login into your paypal account and complete the transaction</h3>
+  <input type="hidden" name="cmd" value="_ext-enter">
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="POST">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="campos.ltd01@gmail.com">
+     <input type="hidden" name="item_name" value="Item Name">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="amount" value="<%= amount %>">
+     <input type="image" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" style="width:180px; >
+  </form>
+  </div>
+  <div class="col-sm-4"></div>
+  </div>
+</div>
+</div>
+
+<%- include partials/footer.ejs %>

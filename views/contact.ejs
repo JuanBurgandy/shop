@@ -1,0 +1,103 @@
+
+<%- include partials/navbar.ejs %>
+<%- include partials/headerimage.ejs %>
+
+    <main class="contact-page">
+      <!-- Contact page-->
+      <section class="contact">
+        <div class="container">
+          <header>
+            <p class="lead">
+            Contact us with any questions, comments and suggestions. Our team will reply to you within 24 hours.
+            </p>
+          </header>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="contact-icon">
+                <div class="icon icon-street-map"></div>
+              </div>
+              <h3>Address</h3>
+              <p>8120 Palm Ln<br>San Bernadino, 45Y 73J<br>California, <strong>Great Britain</strong></p>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-icon">
+                <div class="icon icon-support"></div>
+              </div>
+              <h3>Call center</h3>
+              <p>This number is toll free if calling from Great Britain otherwise we advise you to use the electronic form of communication.</p>
+              <p><strong>+33 555 444 333</strong></p>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-icon">
+                <div class="icon icon-envelope"></div>
+              </div>
+              <h3>Electronic support</h3>
+              <p>Please feel free to write an email to us or to use our electronic ticketing system.</p>
+              <ul class="list-style-none">
+                <li><strong><a href="mailto:">info@fakeemail.com</a></strong></li>
+                <li><strong><a href="#">
+                      Ticketio
+                       - our ticketing support platform</a></strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div  class="container-fluid"id="map">
+        <div class="row">
+          <div class="col-md-12">
+<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d845792.8120997538!2d-118.22675455619706!3d34.09826127721483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d34.1443945!2d-118.0539311!4m5!1s0x80dcacb1ffd1b1d1%3A0x6db97bfacd8787f6!2sgoodwill%20san%20bernardino!3m2!1d34.0929315!2d-117.279136!5e0!3m2!1sen!2sus!4v1567208825611!5m2!1sen!2sus" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+</div>
+</div>
+      <section class="my-5">
+        <div class="container" style="margin-top:150px">
+          <header class="mb-5">
+            <h2 class="heading-line">Contact form</h2>
+          </header>
+          <div class="row">
+            <div class="col-md-7">
+              <form id="contact-form" method="post" action="contact.php" class="custom-form form">
+                <div class="controls">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="name" class="form-label">Your firstname *</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your firstname" required="required" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="surname" class="form-label">Your lastname *</label>
+                        <input type="text" name="surname" id="surname" placeholder="Enter your  lastname" required="required" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="form-label">Your email *</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your  email" required="required" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="form-label">Your message for us *</label>
+                    <textarea rows="4" name="message" id="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-template">Send message</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-5">
+              <p> Send us a message and we will reply within 24 hours. </p>
+              <div class="social">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://www.facebook.com/cultivatingcoders/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="https://twitter.com/codedeploy" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.facebook.com/cultivatingcoders/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <%- include partials/footer.ejs %>

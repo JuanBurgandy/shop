@@ -1,0 +1,253 @@
+/* custom font */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css');
+/* -------------------------------------------------------------------
+              BODY STYLES
+------------------------------------------------------------------- */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+/* align items in row */
+
+.row {
+    text-align: center;
+}
+
+h1,
+h3 {
+    text-transform: uppercase;
+}
+  /*--------------------------------------------
+     CONTAINER FOR  CART, WISHLIST AND  PAYPAL/CC/BTC
+  ------------------------------------------  */
+
+#topCartDisplay{
+  width: 100px;
+  text-align: center;
+}
+
+.fa.fa-shopping-cart{
+  color: #ff9900;
+}
+
+.fa.fa-heart-o{
+  color:red;
+}
+
+/* cart and payment section */
+
+.fa.fa-paypal{color:#009cde;}
+.fa.fa-credit-card{color:#ff9900;}
+
+/* modal pop up style */
+.modal-content{
+  width:50%;
+  padding:30px;
+  margin: 0 auto;
+  text-align:center;
+}
+
+/* -----------------------------
+         LIST OR GRID  & SELECT
+--------------------------------  */
+
+
+select {
+  height: 40px;
+  width: auto;
+ background: none;
+  border: 1px solid #EEEEEE;
+}
+
+
+/*---------------------
+PRODUCT LISTING
+---------- */
+
+
+.product-input{
+background-color: #ebe7db;
+ width: 100px;
+}
+
+.product-div{
+}
+
+.products-container{
+  display:list-item;
+}
+.product-img{
+  margin: 0 auto;
+  width:160px;
+}
+/* -----------------------------
+       Shopping Cart
+--------------------------------  */
+
+/* Shopping Cart */
+
+#productsTable{
+ width: 100%;
+font-size: 18px;
+/*border: 2px dashed green;*/
+}
+
+
+.quantityButton{
+  background: #5cb85c;
+  border-radius: 4px;
+  margin: 4px;
+  height: 35px;
+  width: 35px;
+  color: #FFFFFF;
+
+}
+
+#selectBox {
+ width: 70%;
+ margin-left: -100px;
+}
+
+.btn.btn-info {
+  height: 50px;
+  width: 100px;
+  text-align: center;
+}
+
+/* ------------------
+Sort Input boxes
+---------------------*/
+
+input[type="checkbox"] {
+  display: none;
+  border:10px;
+}
+
+.custom-check {
+        display: inline-block;
+        width: 45px;
+        height: 30px;
+        background: white;
+        border: 1px solid #ebe7db;
+        font-size: 40px;
+        line-height: 1;
+
+    }
+
+.custom-check::before {
+  content: "\e013";
+  color: #424242;
+  display: none;
+}
+
+input[type=checkbox]:checked+.custom-check::before {
+  display: block;
+  color: white;
+
+}
+
+
+#shopping-cart{
+  width: 60px;
+}
+
+.glyphicon-shopping-cart{
+    font-size: 15px;
+  }
+
+#heart-button{
+  width: 60px
+}
+.glyphicon-shopping-cart{
+    font-size: 15px;
+  }
+#couponButton{
+  font-size: 10px;
+}
+
+ #paypal-button{
+   font-size:20px;
+ }
+
+#myBtn{
+  background-color: #ffdee0;
+  font-size:12px;
+}
+#paypalButton{
+  font-size: 15px;
+}
+
+
+
+.product-input{
+  width: 30%;
+  height: auto;
+}
+
+/*-----------------------------
+   WISHLIST
+   ------------------------- */
+
+.modal {
+    margin-top: 30px;
+}
+
+/*----------------------------
+  SHIPPING
+
+  --------------------------- */
+
+#shippingRate {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.checkout {
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+  /* ------------------
+  CONTAINER FOR SELECT CHOICES
+  ---------------------*/
+
+  input[type="checkbox"] {
+      display: none;
+  }
+  .custom-check {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background: white;
+      border: 1px solid black;
+      font-family: 'Glyphicons Halflings';
+      font-size: 22.5px;
+      line-height: 1;
+  }
+  .custom-check::before {
+      content: "\e013";
+      color: #424242;
+      display: none;
+  }
+  input[type=checkbox]:checked+.custom-check::before {
+      display: block;
+      color: white;
+      background-color: #5cb85c;
+  }
+
+/*Cart container */
+table{
+  background-color:#F2F2F2;
+}
+
+.cart-container{
+  margin-top: 5%;
+}
